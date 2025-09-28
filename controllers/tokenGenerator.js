@@ -67,7 +67,7 @@ exports.sendAlert = async(req,res) => {
        const tokens  = await Token.find({});
     //    console.log(tokens)
       
-        await sendAlertToDevices(tokens[0].tokens, "Tourism department", "There is flood is Assam ------- bhagoooooooooooooooo");
+        await sendAlertToDevices(tokens[0].tokens, "Tourism department", "There is flood is Assam --- Evacute fast....");
 
         return res.status(200).json({
             success: true,
